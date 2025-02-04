@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preeti & Langna's Wedding</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url('https://img.freepik.com/free-photo/red-silk-fabric-textured-background_53876-146292.jpg') center/cover;
+            font-family: 'Playfair Display', serif;
+            color: #5c3a2e;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .header {
+            border-bottom: 2px solid gold;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            color: #b22222;
+            margin: 1rem 0;
+            animation: fadeIn 2s;
+        }
+
+        .couple-names {
+            font-size: 2.5rem;
+            letter-spacing: 3px;
+            color: #5c3a2e;
+            margin: 1rem 0;
+        }
+
+        .details {
+            margin: 2rem 0;
+            line-height: 2;
+        }
+
+        .event-date {
+            font-size: 1.5rem;
+            color: #b22222;
+            margin: 1rem 0;
+        }
+
+        .venue {
+            background: rgba(255, 215, 0, 0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .countdown-item {
+            background: #b22222;
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            min-width: 100px;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Wedding Celebration</h1>
+            <div class="couple-names">
+                Preeti<br>
+                &<br>
+                Langna
+            </div>
+        </div>
+
+        <div class="details">
+            <div class="event-date">📅 25th November 2024</div>
+            <div class="event-date">⏰ 6:30 PM Onwards</div>
+            
+            <div class="venue">
+                <h2>Venue</h2>
+                <p>Shree Krishna Palace<br>
+                MG Road, Jaipur<br>
+                Rajasthan</p>
+            </div>
+
+            <div class="countdown">
+                <div class="countdown-item">
+                    <div id="days">00</div>
+                    <small>Days</small>
+                </div>
+                <div class="countdown-item">
+                    <div id="hours">00</div>
+                    <small>Hours</small>
+                </div>
+                <div class="countdown-item">
+                    <div id="minutes">00</div>
+                    <small>Minutes</small>
+                </div>
+            </div>
+
+            <p>With the blessings of our families<br>
+            We request your gracious presence</p>
+        </div>
+    </div>
+
+    <script>
+        // Countdown Timer
+        const weddingDate = new Date('2024-11-25T18:30:00').getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60))
+                                       </script>
